@@ -14,7 +14,7 @@
 --subtitle-color: #D2D2D2E5;
 --placeholder-color: #FFFFFF80;
 --email-bg: #FFFFFF14;
---email-box-shadow-color: rgba(255, 255, 255, 0.05);
+--email-box-shadow-color: #FFFFFF0D;
 --button-hover-color: #5300C9;
 --box-shadow-color: #B384F5;
 --button-text-color: #0F101E;
@@ -188,6 +188,7 @@ to {
     font-size: 1.6rem;
     line-height: 150%;
     color: var(--placeholder-color);
+    text-align: left;
   }
 
   .input:active,
@@ -223,23 +224,25 @@ to {
   }
 
   
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 850px) {
 
     body {
       background: url(BGmobile.png) no-repeat center center fixed;
       background-size: cover;
       height: 100vh;
       width: 100vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      padding: 0 16px;
-      margin-top: 160px;
    }
   }
   
   @media screen and (max-width:530px) {
+
+    body, optgroup, option, select, textarea {
+      font-family: 'Rubik', sans-serif;
+  }
+
+    .body {
+      margin-top: 160px;
+    }
    
     .header {
       top: 30px;
@@ -252,17 +255,17 @@ to {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-self: center;
     }
   
+    .main-wrapper {
+      padding: 0px 16px;
+
+  }
     .title {
       font-weight: 500;
       font-size: 2.8rem;
       text-align: center;
-    }
-
-    .title .subtitle {
-        font-family: 'Rubik' sans-serif;
     }
 
     .main__title {
